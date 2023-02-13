@@ -105,7 +105,7 @@ contract MirrorRendererTest is Test {
         require(contractToTrack == address(mock), "we didnt initialize stuff correctly");
     }
 
-    function test_mContractURI() public {
+    function test_ContractURI() public {
         // setting up mock for mirror renderer
         IERC721OnChainDataMock mock2 = new IERC721OnChainDataMock({
             totalMinted: 10,
@@ -123,7 +123,7 @@ contract MirrorRendererTest is Test {
         require(keccak256(bytes(mock2.contractURI())) == keccak256(bytes(mock.contractURI())), "not tracked correctly");
     }    
 
-    function test_mTokenURI() public {
+    function test_TokenURI() public {
         // setting up mock for mirror renderer
         IERC721OnChainDataMock mock2 = new IERC721OnChainDataMock({
             totalMinted: 10,
