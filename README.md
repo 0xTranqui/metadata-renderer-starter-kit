@@ -2,8 +2,8 @@
 This is repo is a fork of the [zora-drops-contracts](https://github.com/ourzora/zora-drops-contracts) repo and provides a basic setup for experimenting with writing your own custom metadata renderers. This code is NOT AUDITED, use at your own risk
 
 ## Process
-1. Deploy an Edition with placeholder image data on Zora
-2. Create a simple contract with as little as `function tokenURI(uint256 _tokenId) public view returns (string memory)`
+1. Deploy an Edition with placeholder image data on Zora. Links to [testnet](https://testnet.zora.co/create) + [mainnet](https://zora.co/create) create flows
+2. Create a simple renderer contract that follows this [IMetadataRenderer interface](https://github.com/ourzora/zora-drops-contracts/blob/main/src/interfaces/IMetadataRenderer.sol). Can inclue as little as `function tokenURI(uint256 _tokenId) public view returns (string memory)` & `function contractURI() public view returns (string memory)`
 3. On the contract that just deployed for your Edition, on Etherscan run the `setMetadataRenderer` write function with values `newRenderer` (your contract address) and `setupRenderer` with value `0x` if you don't need this.
 
 ## Helpful links
