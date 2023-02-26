@@ -7,8 +7,7 @@ This is repo is a fork of the [zora-drops-contracts](https://github.com/ourzora/
 3. On the contract that just deployed for your Edition, on Etherscan run the `setMetadataRenderer` write function with values `newRenderer` (your contract address) and `setupRenderer` with value `0x` if you don't need this.
 
 ## Helpful links
-1. [2 hour loom tutorial](https://www.loom.com/share/1732d511e8424153b1c8ca6177cc14dd) (0:00 - 21:19 external metadata renderer overview, 21:19-2:02:14 writing + testing + deploying your own)
-1. [Renderer](https://goerli.etherscan.io/address/0x83C9fb9690CeAF0c63F045d7049dF504300cAd81) + [Zora Drop](https://goerli.etherscan.io/address/0x4177c3872f770ed047bee5db849d069ff5e40836) deployed in this tutorial^
+1. [2 hour loom tutorial](https://www.loom.com/share/1732d511e8424153b1c8ca6177cc14dd) (0:00 - 21:19 external metadata renderer overview, 21:19-2:02:14 writing + testing + deploying your own). [Renderer](https://goerli.etherscan.io/address/0x83C9fb9690CeAF0c63F045d7049dF504300cAd81) + [Zora Drop](https://goerli.etherscan.io/address/0x4177c3872f770ed047bee5db849d069ff5e40836) deployed in this tutorial
 1. [50 min loom](https://www.loom.com/share/41e341482bbd4b58a6ee223952447b14) tutorial on using remix to write/test/deploy your own renderer. This tutorial focuses on onchain svgs
 1. [EditionMetadataRenderer](https://github.com/ourzora/zora-drops-contracts/blob/main/src/metadata/EditionMetadataRenderer.sol) by [ZORA](https://twitter.com/ourZORA)
 1. [NounChecksRendererV1](https://etherscan.io/address/0x072762fe5b884ad9eac9a5119976a80544c9f833#code) by [@ripe0x](https://twitter.com/ripe0x)
