@@ -3,7 +3,7 @@ This is repo is a fork of the [zora-drops-contracts](https://github.com/ourzora/
 
 ## Process
 1. Deploy an Edition with placeholder image data on Zora. Links to [testnet](https://testnet.zora.co/create) + [mainnet](https://zora.co/create) create flows
-2. Create a simple renderer contract that follows this [IMetadataRenderer interface](https://github.com/ourzora/zora-drops-contracts/blob/main/src/interfaces/IMetadataRenderer.sol). Can inclue as little as `function tokenURI(uint256 _tokenId) public view returns (string memory)` & `function contractURI() public view returns (string memory)`
+2. Create a simple renderer contract that follows this [IMetadataRenderer interface](https://github.com/ourzora/zora-drops-contracts/blob/main/src/interfaces/IMetadataRenderer.sol). Can include as little as `function tokenURI(uint256 _tokenId) public view returns (string memory)` & `function contractURI() public view returns (string memory)`
 3. On the Zora drop contract you deployed, go to Etherscan and call the `setMetadataRenderer` write function with values `newRenderer` (your contract address) and `setupRenderer` (with value `0x` if you don't need to initialize anything).
 
 ## Helpful links
